@@ -41,7 +41,10 @@ shinyUI(pageWithSidebar(
       conditionalPanel(condition = "input.comparisons >= 4", dateInput("date4", label = "Date (Comparison 4)")),
       conditionalPanel(condition = "input.comparisons >= 5", dateInput("date5", label = "Date (Comparison 5)")),
       conditionalPanel(condition = "input.comparisons >= 6", dateInput("date6", label = "Date (Comparison 6)")),
-      conditionalPanel(condition = "input.comparisons >= 7", dateInput("date7", label = "Date (Comparison 7)"))
+      conditionalPanel(condition = "input.comparisons >= 7", dateInput("date7", label = "Date (Comparison 7)")),
+      p(),
+      p("Relative Density is by",  a("Chris Mulligan", href="http://chmullig.com"), "and is powered by", a("ADI's", href="http://adicu.com"), a("Density", href="http://density.adicu.com/"), a("API.", href="http://density.adicu.com/docs"), "Density is a collaboration with", a("ESC", href="http://columbiaesc.com/"), "and", a("CUIT.", href="https://cuit.columbia.edu/") ),
+      p("Relative Density is", a("released", href="https://github.com/chmullig/relative_density"), "under an MIT License.")
   ),
 
   # Show a plot of the generated distribution
